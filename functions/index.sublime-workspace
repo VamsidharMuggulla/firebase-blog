@@ -1,0 +1,294 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"star",
+				"startbutton"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"fi",
+				"first"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/vam/Brio/mail/site-template/mail/index.html",
+		"/home/vam/Downloads/admin-arslan_pilotgapps_com_25-08-2017_30-08-2017.mbox",
+		"/home/vam/.cache/.fr-Im4FpN/OFL.txt",
+		"/home/vam/.cache/.fr-jvOhOC/OFL.txt",
+		"/home/vam/Brio/mail/zmail/users/admin.py",
+		"/home/vam/Downloads/animate.css",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/templates/signup.html",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/models.py",
+		"/home/vam/Downloads/bootstrap-notify-3.1.3/bower.json",
+		"/home/vam/Downloads/bootstrap-notify-3.1.3/bootstrap-notify.js",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/selfie/settings.py",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/selfie/urls.py",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/static/js/capture.js",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/static/css/main.css",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/static/js/takeit.js",
+		"/home/vam/Downloads/bootstrap-notify-3.1.3/LICENSE",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/views.py",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/static/css/shared.css",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/templates/signupp.html",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/urls.py",
+		"/home/vam/aws_rekognition/html/capture.js",
+		"/home/vam/aws_rekognition/selfie_auth/selfie/users/templates/login.html",
+		"/home/vam/aws_rekognition/html/index.html",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/models.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/outwards.py",
+		"/home/vam/.config/sublime-text-3/Packages/User/AutoPep8.sublime-settings",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/models.py",
+		"/home/vam/.config/sublime-text-3/Packages/User/Pylinter.sublime-settings",
+		"/home/vam/.config/sublime-text-3/Packages/User/JSLint.sublime-settings",
+		"/home/vam/.config/sublime-text-3/Packages/Pylinter/Default (Linux).sublime-keymap",
+		"/home/vam/.config/sublime-text-3/Packages/Pylinter/Pylinter.sublime-settings",
+		"/home/vam/.config/sublime-text-3/Packages/AutoPEP8/Default.sublime-keymap",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/templates/in-out\nin-out\nin-out\nin-out/outwards-delivery.html",
+		"/home/vam/.config/sublime-text-3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/inventory.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/itemrelationship.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/itemattributes.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/itemtypes.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/search.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views/__init__.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/viewss.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/urls.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/urls.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/forms.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/templates/inventori_index.html",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/views.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/views/inventoryView.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/views/reservationsView.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/templates/reservations/reservation.html",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/templates/reservations/reservations.html",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/templates/dashboard/dashboard_index.html",
+		"/home/vam/Brio/inventory_2.0/inventory/msum/settings.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/forms.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/views/priceListView.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/dashboards.py",
+		"/home/vam/Brio/inventory_2.0/inventory/inventori/templates/item_variants.html",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/views/ViewInventoryItemAttribute.py",
+		"/home/vam/Brio/inventory_2.0/inventory/orders/views/warehousesView.py",
+		"/home/vam/Brio/inventory_2.0/inventory/users/views.py",
+		"/home/vam/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"static",
+			"photo",
+			"      photo.setAttribute('src', data);\n",
+			"takepicture",
+			"margin",
+			"canvas",
+			"$(",
+			"capture",
+			"canvas",
+			"clearphoto",
+			"video",
+			"takepicture",
+			"startbutton",
+			"click",
+			"photo",
+			"canvas",
+			"canvas'",
+			"canvas",
+			"video",
+			"\n.contentarea {\n  font-size: 16px;\n  font-family: \"Lucida Grande\", \"Arial\", sans-serif;\n  width: 760px;\n}",
+			"startbutton",
+			"static",
+			"BASE_DIR",
+			"in-out-create-list",
+			"inout",
+			"search_items",
+			"search_variants",
+			"variants_filter",
+			"#,",
+			"update_item_standalone",
+			"item_variants",
+			"search_variants_create",
+			"import_order_items",
+			"net_",
+			"number",
+			"expired",
+			"\n            ",
+			"user_ids",
+			"tenanant_user",
+			"_user",
+			"tenanant_users",
+			"tenanent_users",
+			"filter",
+			"reservation_item",
+			"my_tenid",
+			"admins_required",
+			"@admins_required",
+			"reserva"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"from django import forms\nfrom inventori.models import *\nfrom orders.models import customer, IOrder\nfrom django.db.models import Q\n\n\nclass VariantForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(VariantForm, self).__init__(*args, **kwargs)\n        self.fields['item'].widget = forms.HiddenInput()\n        self.fields['item'].label = ''\n        for field in self.fields:\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            if field == 'sku_code':\n                self.fields[field].widget.attrs[\"placeholder\"] = \"SKU Code\"\n                continue\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = Variant\n        fields = '__all__'\n\n\nclass VariantDetailsForm(forms.ModelForm):\n    value = forms.ChoiceField(widget=forms.Select, required=True, choices=[])\n\n    def __init__(self, *args, **kwargs):\n        self.item = kwargs.pop('item', None)\n        self.selected_attribute = kwargs.pop('selected_attribute', None)\n\n        super(VariantDetailsForm, self).__init__(*args, **kwargs)\n        # self.fields['value'].choices = Attribute.objects.values_list('name', 'name').distinct()\n        if self.item:\n            self.fields['attribute'].queryset = Attribute.objects.filter(item_type=self.item)\n        if self.selected_attribute:\n            self.fields['value'].choices = Attribute.objects.filter(item_type=self.item,\n                                                                    name__iexact=self.selected_attribute.name)\n        for field in self.fields:\n            self.fields[field].widget.attrs[\"class\"] = \"selectpicker form-control\"\n            self.fields[field].widget.attrs[\"data-live-search\"] = \"true\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = VariantDetails\n        fields = ['attribute', 'value']\n\n\nclass ItemRelationshipForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(ItemRelationshipForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            # if field == 'item_1' or field == 'item_2':\n            self.fields[field].widget.attrs[\"class\"] = \"selectpicker form-control \"\n            self.fields[field].widget.attrs[\"data-live-search\"] = \"true\"\n            # continue\n\n            # self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            # self.fields[field].widget.attrs[\"min\"] = \"1\"\n            # self.fields[field].widget.attrs[\"max\"] = \"100\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = ItemRelationship\n        exclude = ('tenanent',)\n\n\nclass ItemTypeForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(ItemTypeForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = ItemType\n        fields = '__all__'\n\n\nclass ItemForm(forms.ModelForm):\n    description = forms.CharField(required=False, widget=forms.Textarea)\n    images = forms.ImageField(required=False, widget=forms.FileInput)\n\n    def __init__(self, *args, **kwargs):\n        super(ItemForm, self).__init__(*args, **kwargs)\n        self.fields['dealer'].queryset = customer.objects.filter(Q(custtype__name__iexact='agent'),\n                                                                 custtype__status='1')\n        for field in self.fields:\n            if field == 'item_type' or field == 'dealer':\n                self.fields[field].widget.attrs[\"class\"] = \"selectpicker form-control\"\n                self.fields[field].widget.attrs[\"data-live-search\"] = \"true\"\n                self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n                continue\n            elif field == 'images':\n                self.fields[field].widget.attrs[\"class\"] = \"file-input\"\n                continue\n            elif field == 'description':\n                self.fields[field].widget.attrs[\"style\"] = \"height:175px;\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = Item\n        exclude = ('tenanent',)\n\n\nclass ItemUpdateForm(forms.ModelForm):\n    description = forms.CharField(required=False, widget=forms.Textarea)\n\n    def __init__(self, *args, **kwargs):\n        super(ItemUpdateForm, self).__init__(*args, **kwargs)\n        self.fields['dealer'].queryset = customer.objects.filter(custtype__name__iexact='agent', custtype__status='1')\n        for field in self.fields:\n            if field == 'item_type' or field == 'dealer':\n                self.fields[field].widget.attrs[\"class\"] = \"selectpicker form-control\"\n                self.fields[field].widget.attrs[\"data-live-search\"] = \"true\"\n                self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n                continue\n            elif field == 'images':\n                self.fields[field].widget.attrs[\"class\"] = \"file-input\"\n                continue\n            elif field == 'description':\n                self.fields[field].widget.attrs[\"style\"] = \"height:175px;\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = Item\n        exclude = ('images',)\n\n\nNET_ATTR_FIELD_NAME_MAPPING = {\n    'weight': 'net_weight',\n    'unit': 'net_unit'\n}\n\n\nclass NetWeightForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(NetWeightForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            if field == 'unit':\n                self.fields[field].widget.attrs[\"style\"] = \"width:130px;\"\n                # self.fields[field].widget.attrs[\"class\"] = \"selectpicker\"\n                # continue\n            if field == 'weight':\n                self.fields[field].widget.attrs[\"min\"] = \"1\"\n                self.fields[field].widget.attrs[\"onkeypress\"] =\"return event.charCode >= 48 && event.charCode <= 57\"\n                # self.fields[field].widget.attrs[\"style\"] = \"width:70%;\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    def add_prefix(self, field_name):\n        field_name = NET_ATTR_FIELD_NAME_MAPPING.get(field_name, field_name)\n        return super(NetWeightForm, self).add_prefix(field_name)\n\n    class Meta:\n        model = Weight\n        fields = '__all__'\n\n\nGROSS_ATTR_FIELD_NAME_MAPPING = {\n    'weight': 'gross_weight',\n    'unit': 'gross_unit'\n}\n\n\nclass GrossWeightForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(GrossWeightForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            if field == 'unit':\n                self.fields[field].widget.attrs[\"style\"] = \"width:130px;\"\n                # self.fields[field].widget.attrs[\"class\"] = \"selectpicker\"\n                # continue\n            if field == 'weight':\n                self.fields[field].widget.attrs[\"min\"] = \"1\"\n                # self.fields[field].widget.attrs[\"style\"] = \"width:70%;\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    def add_prefix(self, field_name):\n        field_name = GROSS_ATTR_FIELD_NAME_MAPPING.get(field_name, field_name)\n        return super(GrossWeightForm, self).add_prefix(field_name)\n\n    class Meta:\n        model = Weight\n        fields = '__all__'\n\n\nDIMENSION_ATTR_FIELD_NAME_MAPPING = {\n    'unit': 'dimension_unit'\n}\n\n\nclass DimensionsForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(DimensionsForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            if field == 'length' or field == 'width' or field == 'height':\n                self.fields[field].widget.attrs[\"min\"] = \"1\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    def add_prefix(self, field_name):\n        field_name = DIMENSION_ATTR_FIELD_NAME_MAPPING.get(field_name, field_name)\n        return super(DimensionsForm, self).add_prefix(field_name)\n\n    class Meta:\n        model = Dimension\n        fields = '__all__'\n\n\nATTR_FIELD_NAME_MAPPING = {\n    'name': 'attr_name'\n}\n\nfrom django.core.validators import RegexValidator\n\n\nclass AttributeForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(AttributeForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    def add_prefix(self, field_name):\n        field_name = ATTR_FIELD_NAME_MAPPING.get(field_name, field_name)\n        return super(AttributeForm, self).add_prefix(field_name)\n\n    class Meta:\n        model = Attribute\n        exclude = ('item_type',)\n\n\nclass StockForm(forms.ModelForm):\n    def __init__(self, *args, **kwargs):\n        super(StockForm, self).__init__(*args, **kwargs)\n        for field in self.fields:\n            if field == 'quantity_per_carton' or field == 'cartons_per_pallet':\n                self.fields[field].widget.attrs[\"min\"] = \"1\"\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = Stock\n        fields = ['quantity', 'warehouse', 'batch_no', 'item', 'quantity_per_carton', 'cartons_per_pallet']\n\n\nclass InventoryTnxForm(forms.ModelForm):\n    query_set_none = customer.objects.none()\n    order = forms.ModelMultipleChoiceField(label='Order', queryset=IOrder.objects.none(), required=False)\n    customer = forms.ModelChoiceField(label='Customer', queryset=query_set_none, required=False)\n    agent = forms.ModelChoiceField(label='Agent', queryset=query_set_none, required=False)\n\n    def __init__(self, *args, **kwargs):\n        self.tenanant = kwargs.pop('tenanant', None)\n        self.from_post_customer = kwargs.pop('from_post_customer', None)\n        super(InventoryTnxForm, self).__init__(*args, **kwargs)\n        self.fields['type'].widget = forms.HiddenInput()\n        self.fields['type'].label = ''\n        self.fields['receipt_no'].widget = forms.HiddenInput()\n        self.fields['receipt_no'].label = ''\n        if not self.instance:\n            self.fields['order'].widget.attrs[\"disabled\"] = \"\"\n        if self.tenanant:\n            self.fields['customer'].queryset = customer.objects.filter(tenid=self.tenanant[1],\n                                                                       custtype__name__iexact='customer').exclude(\n                id=self.tenanant[0].tenanant_users_set.all().first().customerid_id)\n            self.fields['agent'].queryset = customer.objects.filter(tenid=self.tenanant[1],\n                                                                    custtype__name__iexact='agent').exclude(\n                id=self.tenanant[0].tenanant_users_set.all().first().customerid_id)\n        if self.from_post_customer:\n            self.fields['order'].queryset = IOrder.objects.filter(customer=self.from_post_customer)\n        for field in self.fields:\n            if field == \"inventory_items\" or field == \"warehouse\" or field == \"purpose\" or field == 'order' or field == 'customer':\n                if self.instance.id and (field == 'order' or field == 'customer' or field == \"warehouse\"):\n                    self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n                    self.fields[field].widget.attrs[\"disabled\"] = \"\"\n                    continue\n                self.fields[field].widget.attrs[\"class\"] = \"selectpicker form-control\"\n                self.fields[field].widget.attrs[\"data-live-search\"] = \"true\"\n                continue\n            if field == 'date':\n                self.fields[field].widget.attrs['class'] = 'date-picker form-control'\n                self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n                continue\n            self.fields[field].widget.attrs[\"class\"] = \"form-control\"\n            self.fields[field].widget.attrs[\"placeholder\"] = field.capitalize()\n\n    class Meta:\n        model = InventoryTnx\n        exclude = ('tenanent',)\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 332.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

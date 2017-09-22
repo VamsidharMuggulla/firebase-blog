@@ -1,0 +1,45 @@
+[debug] [2017-09-22T12:53:31.522Z] ----------------------------------------------------------------------
+[debug] [2017-09-22T12:53:31.524Z] Command:       /home/vam/.nvm/versions/node/v8.5.0/bin/node /home/vam/.nvm/versions/node/v8.5.0/bin/firebase serve --only hosting,functions,database
+[debug] [2017-09-22T12:53:31.524Z] CLI Version:   3.12.0
+[debug] [2017-09-22T12:53:31.524Z] Platform:      linux
+[debug] [2017-09-22T12:53:31.524Z] Node Version:  v8.5.0
+[debug] [2017-09-22T12:53:31.525Z] Time:          Fri Sep 22 2017 18:23:31 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:31.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-22T12:53:31.535Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-22T12:53:31.535Z] > authorizing via signed-in user
+[debug] [2017-09-22T12:53:31.537Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-09-22T12:53:31.538Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/EyjsySrFaLxbpto7Sq4ek8sfJLHYqGBYRMQBm6Z8gP4',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Sep 22 2017 18:23:31 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:31.854Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-22T12:53:31.904Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/vamdemo-49d89  
+ Fri Sep 22 2017 18:23:31 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:33.218Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-22T12:53:33.221Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/vamdemo-49d89/tokens  
+ Fri Sep 22 2017 18:23:33 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:34.266Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/vam/brio_blog'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-09-22T12:53:34.849Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/vamdemo-49d89  
+ Fri Sep 22 2017 18:23:34 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:34.851Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/vamdemo-49d89/apiKeys  
+ Fri Sep 22 2017 18:23:34 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:34.852Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/vamdemo-49d89  
+ Fri Sep 22 2017 18:23:34 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:36.318Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-22T12:53:36.344Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-22T12:53:36.407Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-22T12:53:36.407Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/288531240613/clients/_:getWebAppConfig  
+ Fri Sep 22 2017 18:23:36 GMT+0530 (IST)
+[debug] [2017-09-22T12:53:37.236Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[info] ✔  functions: blog: http://localhost:5001/vamdemo-49d89/us-central1/blog
+[info] ✔  functions: blogpost: http://localhost:5001/vamdemo-49d89/us-central1/blogpost
