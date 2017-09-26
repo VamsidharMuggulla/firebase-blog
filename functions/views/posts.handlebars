@@ -2,30 +2,43 @@
 <div class="container" id="faq-section" style="margin-bottom:0; padding-top:30px;"> 
       <!--<label class="result-data">Showing results</label> -->
       <h1 style="text-align:center;">
-      	Welcome!
+      	<img src="/assets/images/Perk-Payroll-Logo.png" alt="Perk-Payroll-Logo"> Blog!
       </h1>
       <div style="height:50px;"></div>
-      <div class="col-md-12 mpad0 faq-question">
-      	<ul>
-			{{#each blog_posts as |value key|}}
-		<li>
+      {{!-- {{#each blog_posts as |value key|}}
+      <div class="col-md-12 col-lg-8 col-sm-12 mpad0 faq-question">      
+      	<div class="col-md-2 col-lg-2 col-sm-2">
+      	</div>			
+		<div class="col-md-10 col-lg-10 col-sm-10">			
 			<a href="/blog/{{this.key}}"> {{this.val.key}}
-			  {{#each this.val as |childValue childKey|}}
-			  
-			  {{#if_equal childKey 'date' }}
-				  {{else}}
-				  {{#if_equal childKey 'status' }}
-				  	{{else}}
-				  	{{childValue}}
-				  {{/if_equal}}
-			  {{/if_equal}}
-			  {{!-- {{childValue}} --}}
-			  
-			  {{/each}}
-			  
+			  {{#each this.val as |childValue childKey|}}	  
+				  {{#if_equal childKey '==' 'date' }}
+					  {{else}}
+					  {{#if_equal childKey '==' 'status' }}
+					  	{{else}}
+					  	{{#if_equal childKey '==' 'description' }}
+					  	   <i class="blog-thumbnail-description">{{childValue}}</i>
+					  		{{else}}
+					  		{{childValue}}
+					  	{{/if_equal}}
+					  {{/if_equal}}
+				  {{/if_equal}}			  
+			  {{/each}}		 
 			</a>
-		</li>
-			{{/each}}
-		</ul>
-     </div>
+			</div>
+			</div>
+		{{/each}} --}}
+		{{#each blog_posts}}
+    <div class="col-md-12 col-lg-8 col-sm-12 mpad0 faq-question show-pointer-on-hover" onclick="window.location='/blog/{{this.url}}'">      
+      	<div class="col-md-2 col-lg-2 col-sm-2 post-date">
+      		{{this.date}}
+      	</div>			
+		<div class="col-md-10 col-lg-10 col-sm-10">	
+			<b class="post-title">{{this.title}}</b>
+			<br>
+			<i class="post-description">{{this.description}}	</i>
+		</div>
+	</div>
+		{{/each}}
+	</div>
 </div>

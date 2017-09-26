@@ -1,14 +1,10 @@
 {
   "hosting": {
-    "public": "app",
+    "public": "public",
     "rewrites": [
-      // {
-      //   "source": "/blog/*",
-      //   "function": "blogpost"
-      // },
       {
-        "source":"**",
-        "function":"app"
+        "source": "**",
+        "function": "app"
       }
     ],
     "ignore": [

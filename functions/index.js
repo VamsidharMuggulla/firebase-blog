@@ -4,10 +4,11 @@ var admin = require("firebase-admin");
 var path = require('path');
 
 fs = require('fs')
-var serviceAccount = require('./vamdemo-49d89-firebase-adminsdk-2a6c1-ee5ab9e646.json');
+// var serviceAccount = require('./vamdemo-49d89-firebase-adminsdk-2a6c1-ee5ab9e646.json');
+var serviceAccount = require('./perkpayroll-com-firebase-adminsdk-ml912-95212aa7f5.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://vamdemo-49d89.firebaseio.com"
+  databaseURL: "https://perkpayroll-com.firebaseio.com"
 });
 blog_posts={
   'one':'one.html',
@@ -18,19 +19,54 @@ blog_posts={
 const express = require('express');
 const exphbs = require('express-handlebars');
 const app = express();
-var if_equal=function(a, b, opts) {
-          if (a == b) {
-            return opts.fn(this) 
-          } else {
-            return opts.inverse(this)
-          }
-        }
+//IF_EQUAL 
+var if_equal=function (lvalue, operator, rvalue, options) {
+
+    var operators, result;
+
+    if (arguments.length < 3) {
+        throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
+    }
+
+    if (options === undefined) {
+        options = rvalue;
+        rvalue = operator;
+        operator = "===";
+    }
+
+    operators = {
+        '==': function (l, r) { return l == r; },
+        '===': function (l, r) { return l === r; },
+        '!=': function (l, r) { return l != r; },
+        '!==': function (l, r) { return l !== r; },
+        '<': function (l, r) { return l < r; },
+        '>': function (l, r) { return l > r; },
+        '<=': function (l, r) { return l <= r; },
+        '>=': function (l, r) { return l >= r; },
+        'typeof': function (l, r) { return typeof l == r; }
+    };
+
+    if (!operators[operator]) {
+        throw new Error("Handlerbars Helper 'compare' doesn't know the operator " + operator);
+    }
+
+    result = operators[operator](lvalue, rvalue);
+
+    if (result) {
+        return options.fn(this);
+    } else {
+        return options.inverse(this);
+    }
+
+}
+//IF_EQUAL ENDS
 app.engine('handlebars', exphbs({defaultLayout: 'main',helpers : { 
         if_equal : if_equal
       }
     })
 );
 app.set('view engine', 'handlebars');
+
 
 
 app.get('/', (req, res) => {
@@ -48,25 +84,25 @@ app.get('/', (req, res) => {
 app.get('/blog', (req, res) => {
   var db = admin.database();
   var blog_posts = db.ref("blog");
-  
-  // blog_posts.on("value", function(data) {
-  //   res.render('posts', {
-  //     blog_posts:data.val()
-  //   });
-  // });
-
-  var blog_posts = db.ref("blog");
   var blog_posts_ordered=[]
   blog_posts.orderByChild("date")
   .on("value", function(snapshot) {
     // console.log(snapshot.val())
      snapshot.forEach(function(child) {
         // console.log(child.key+': '+child.val().date);
-        o=9
-        if(child.val().status==1){
-          console.log(o++)
-          console.log(child.val().status)
-        blog_posts_ordered.push(child)
+        if(child.val().status==1){          
+        blog_posts_ordered.push({
+          'url':child.key,
+          'date':new Date(child.val().date).toDateString(),
+          'title':child.val().title,
+          'description':child.val().description
+        })
+        console.log({
+          'url':child.key,
+          'date':new Date(child.val().date).toDateString(),
+          'title':child.val().title,
+          'description':child.val().description
+        });
       }
      });
      // console.log(blog_posts_ordered)
@@ -82,35 +118,39 @@ app.get('/blog/*',(req, res) => {
     res.status(404).send('2 No Post Found found :(');
     return;
   }
+  //GET BLOG POST
   var db = admin.database();
   var ref = db.ref('/blog/'+request_path[2]);
   if(ref){
     ref.once("value", function(data) {
       blog_post=data.val()
-      console.log(999)
-      console.log(blog_post)
       if(blog_post){
-        //READ FILE  MUSTACHE
-        // file_path=path.resolve(__dirname, 'app/posts',html_file)
-        // post_file_path=file_path
-        // post_file_content=""
-        // post_template_path=path.resolve(__dirname, 'app/posts/post-template.html')
-        // post_template_content=""      
-        // post_file_content=fs.readFileSync(post_file_path, 'utf8')//, function (err,data) {      
-        // post_template_content=fs.readFileSync(post_template_path)//, 'utf8', function (err,data) {      
-        // var rendered = mustache.to_html(post_template_content.toString(), {'post_content':post_file_content.toString()});   
-        // res.status(200).send(rendered)
-        //MUSTACHE END        
-        res.status(200).render(request_path[2],{"blog_post":blog_post})
+        //GET BLOG POSTS LIST
+        var db = admin.database();
+        var blog_posts = db.ref("blog");
+        var blog_posts_ordered=[]
+        blog_posts.orderByChild("date")
+        .on("value", function(snapshot) {
+          // console.log(snapshot.val())
+           snapshot.forEach(function(child) {
+              // console.log(child.key+': '+child.val().date);
+              if(child.val().status==1){
+              blog_posts_ordered.push(child)
+            }
+           });
+         })
+           //GET BLOG POSTS LIST END
+        res.status(200).render(request_path[2],{"blog_post":blog_post,'blog_posts':blog_posts_ordered})
         return;
       }
-      res.status(200).send('3 No Post Found :(')
+      res.redirect('/blog/')
       return;
     });
   } else {
-    res.status(200).send(' 4 No Post Found :(')
+    res.redirect('/blog/')
     return;
   }
+  //GET BLOG POST ENDS
 });
 // This HTTPS endpoint can only be accessed by your Firebase Users.
 // Requests need to be authorized by providing an `Authorization` HTTP header

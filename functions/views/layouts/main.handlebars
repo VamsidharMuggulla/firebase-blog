@@ -2,18 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ blog_post.title }}</title>
+    <title>
+      {{#if blog_post.title }}
+        {{blog_post.title}}
+      {{else}}
+        Perk Payroll | Blog
+      {{/if}}
+    </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Most Employees don't understand the complicated and confusing financial terminology related to their salaries. They find it difficult to comprehend the Payroll terms like CTC, Gross Salary, Net Salary, Basic Salary, Deductions, Payslip, Form 16, Statutory Deductions, PF, ESI, PT & TDS.">
     <meta name="keywords" content="Payroll Terms, online payroll,best online payroll software,online payroll software,online payroll software india, simple payroll software,best online payroll software hyderabad, best online payroll software banglore,Time & Attendance software, online attendance software, salary software India, attendance management system, attendance system software, cloud based payroll software,salary software, PF and ESI, online payroll software, statutory compliance, secure payroll partner, compliant payroll partner, payroll frequently asked questions, payroll faq, frequently asked payroll questions, questions on payroll system, types of leaves">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link id="ico" rel="icon" href="assets\images\favicon.ico" type="image/ico">
-    <link  id="sico" rel="shortcut icon" href="http://www.perkpayroll.com/assets/images/favicon.ico" type="image/x-icon">
-    <link href="http://www.perkpayroll.com/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://www.perkpayroll.com/assets/css/style.min.css" rel="stylesheet">
-    <link href="http://www.perkpayroll.com/assets/css/rangeslider.css" rel="stylesheet">
+    <link id="ico" rel="icon" href="/assets/images/favicon.ico" type="image/ico">
+    <link  id="sico" rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" rel="stylesheet">
+    <link href="/assets/css/rangeslider.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="http://www.perkpayroll.com/assets/css/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/sweetalert.css">
     <style>
     *{font-family:ProximaNovaRegular; font-size:16px;}
     .faq-ul-align ul li a{ text-decoration:none;}
@@ -31,19 +37,19 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="http://www.perkpayroll.com/assets/images/Perk-Payroll-Logo.png" alt="Perk-Payroll-Logo">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/assets/images/Perk-Payroll-Logo.png" alt="Perk-Payroll-Logo">
           </a> 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li> <a href="features.html">Features</a> </li>
+            <li> <a href="/features.html">Features</a> </li>
             <li> 
               <!--  <a href="index.html?testimoni">Testimonials</a> --> 
             </li>
-            <li> <a href="index.html#onlinepayrollpricing">Pricing</a> </li>
-            <li> <a href="online-payroll-security.html">Security</a></li>
-            <li> <a href="faq.html">Faq's</a> </li>
+            <li> <a href="/index.html#onlinepayrollpricing">Pricing</a> </li>
+            <li> <a href="/online-payroll-security.html">Security</a></li>
+            <li> <a href="/faq.html">Faq's</a> </li>
             <li> <a href="https://perk.brio.co.in/" target="_blank">LOGIN</a> </li>
             <li>
               <button class="btn btn-default get-started" onclick="onnavclick(this.id)" id="tryfreebtn">TRY FOR FREE</button>
@@ -312,13 +318,24 @@
         <div class="col-md-3 mpad0">
           <div class="footer-description footeralign">
             <h2></h2>
-            <label>
-              <h4 style="font-variant: small-caps;">Blog</h4>
-              <a href="http://brio.co.in/payroll-software/" target="_blank" style="color: #acacac !important; text-decoration:none !important;">Payroll Software India</a><hr style="margin-top: 5px !important;margin-bottom: 5px !important; border-top: 1px solid #313131 !important;">
+            <label class="payroll-blog-container">
+              <h4 style="font-variant: small-caps;">
+              <a class="perk-blog-heading" href="/blog/">Blog</a>
+            </h4>
+              {{#each blog_posts}}
+                  {{#if_equal @index '>=' 4}}  
+                  <a href="/blog/{{this.url}}">            
+                    {{this.title}} 
+                    </a>
+                     {{else}}
+                  {{/if_equal}}
+              {{/each}}
+            
+            {{!--   <a href="http://brio.co.in/payroll-software/" target="_blank" style="color: #acacac !important; text-decoration:none !important;">Payroll Software India</a><hr style="margin-top: 5px !important;margin-bottom: 5px !important; border-top: 1px solid #313131 !important;">
               <a href="http://brio.co.in/salary-software-india/" target="_blank" style="color: #acacac !important; text-decoration:none !important;">Salary Software India</a><hr style="margin-top: 5px !important;margin-bottom: 5px !important; border-top: 1px solid #313131 !important;">
               <a href="http://brio.co.in/time-attendance-software-online-attendance-software/" target="_blank" style="color: #acacac !important; text-decoration:none !important;">Time and attendance software</a><hr style="margin-top: 5px !important;margin-bottom: 5px !important; border-top: 1px solid #313131 !important;">
               <a href="http://brio.co.in/does-online-employee-self-service-improves-collaboration/" target="_blank" style="color: #acacac !important; text-decoration:none !important;">Does Online ESS Improves Collaboration?</a><hr style="margin-top: 5px !important;margin-bottom: 5px !important; border-top: 1px solid #313131 !important;">
-            </label>
+             --}}</label>
           </div>
         </div>
         <div class="col-md-3 mpad0">
@@ -392,7 +409,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflyFv0K1/www-widgetapi.js"  src="js/www-widgetapi.js" --> 
 <script async="" src="http://www.google-analytics.com/analytics.js"></script> 
 <script src="https://www.youtube.com/player_api"></script> 
-<script src="https://d.videodimmertool.com/l/load.js"></script>
+<script src="http://d.videodimmertool.com/l/load.js"></script>
 <script language="javascript" type="text/javascript" src="https://perk.brio.co.in/common.js"></script> 
 <!--src="js/common.js" src="common.js"--> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
