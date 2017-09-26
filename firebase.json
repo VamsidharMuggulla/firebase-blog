@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "app",
+    "rewrites": [
+      // {
+      //   "source": "/blog/*",
+      //   "function": "blogpost"
+      // },
+      {
+        "source":"**",
+        "function":"app"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "vamdemo-49d89-firebase-adminsdk-2a6c1-ee5ab9e646.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

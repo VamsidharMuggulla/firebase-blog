@@ -1,0 +1,31 @@
+
+<div class="container" id="faq-section" style="margin-bottom:0; padding-top:30px;"> 
+      <!--<label class="result-data">Showing results</label> -->
+      <h1 style="text-align:center;">
+      	Welcome!
+      </h1>
+      <div style="height:50px;"></div>
+      <div class="col-md-12 mpad0 faq-question">
+      	<ul>
+			{{#each blog_posts as |value key|}}
+		<li>
+			<a href="/blog/{{this.key}}"> {{this.val.key}}
+			  {{#each this.val as |childValue childKey|}}
+			  
+			  {{#if_equal childKey 'date' }}
+				  {{else}}
+				  {{#if_equal childKey 'status' }}
+				  	{{else}}
+				  	{{childValue}}
+				  {{/if_equal}}
+			  {{/if_equal}}
+			  {{!-- {{childValue}} --}}
+			  
+			  {{/each}}
+			  
+			</a>
+		</li>
+			{{/each}}
+		</ul>
+     </div>
+</div>

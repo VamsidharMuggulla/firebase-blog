@@ -1,0 +1,36 @@
+[debug] [2017-09-26T05:09:48.494Z] ----------------------------------------------------------------------
+[debug] [2017-09-26T05:09:48.497Z] Command:       /home/vam/.nvm/versions/node/v8.5.0/bin/node /home/vam/.nvm/versions/node/v8.5.0/bin/firebase serve --only hosting,functions,database
+[debug] [2017-09-26T05:09:48.497Z] CLI Version:   3.12.0
+[debug] [2017-09-26T05:09:48.497Z] Platform:      linux
+[debug] [2017-09-26T05:09:48.497Z] Node Version:  v8.5.0
+[debug] [2017-09-26T05:09:48.497Z] Time:          Tue Sep 26 2017 10:39:48 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:48.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-26T05:09:48.508Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-26T05:09:48.508Z] > authorizing via signed-in user
+[debug] [2017-09-26T05:09:48.510Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/vamdemo-49d89  
+ Tue Sep 26 2017 10:39:48 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:49.913Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-26T05:09:49.916Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/vamdemo-49d89/tokens  
+ Tue Sep 26 2017 10:39:49 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:52.699Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/vam/brio_blog'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2017-09-26T05:09:53.291Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/vamdemo-49d89  
+ Tue Sep 26 2017 10:39:53 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:53.292Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/vamdemo-49d89/apiKeys  
+ Tue Sep 26 2017 10:39:53 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:53.294Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/vamdemo-49d89  
+ Tue Sep 26 2017 10:39:53 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:54.032Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-26T05:09:55.054Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-26T05:09:55.055Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/288531240613/clients/_:getWebAppConfig  
+ Tue Sep 26 2017 10:39:55 GMT+0530 (IST)
+[debug] [2017-09-26T05:09:55.064Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-26T05:09:55.977Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: app
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[info] ✔  functions: app: http://localhost:5001/vamdemo-49d89/us-central1/app

@@ -1,0 +1,12 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "firebase-admin": "^5.2.1",
+    "firebase-functions": "^0.6.3",
+    "mustache": "^2.3.0"
+  },
+  "private": true
+}
